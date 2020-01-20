@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>Fontio</title>
+        <meta name="description" content="Search and preview fonts to make it easier to see how your font will appear.">
+        <meta name="author" content="Eric Upton">
+        <link type="text/css" rel="stylesheet" href="./styles/favorite-fonts.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Alata|Amatic+SC|Arvo|Baloo+Bhai|Baskervville|Crete+Round|Crimson+Text|Dancing+Script|Exo|Fjalla+One|Gayathri|Lato|Merriweather|Montserrat|Muli|Oswald|Pacifico|Permanent+Marker|Poppins|Raleway|Righteous|Roboto|Source+Code+Pro|Teko&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="./code/favorite-fonts.js"></script>
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function()
+            {
+                init();
+            }, false);
+        </script>
+    </head>
+    <body>
+        <header>
+            <div id="main-header">
+                <div id="header-logo">
+                    <img src="./images/logo.png" alt="logo" id="logo"/>
+                    <h3 style="margin: 0;">Fontio</h3>
+                    <p style="margin: 0;">Fast font finder</p>
+                </div> 
+                <nav id="header-nav">
+                    <div id="site-nav">
+                        <ul class="nav-links">
+                            <li>Link 1</li>
+                            <li>Link 2</li>
+                            <li>Link 3</li>
+                        </ul>
+                    </div>
+                </nav>
+            </div> 
+            <nav id="header-utils">                
+                <form>
+                    <ul id="page-utils">
+                        <li><input type="text" name="search" title="Search fonts" id="txtSearch" placeholder="Search" oninput="updateSearchResults(this.value)"></li>
+                        <li><input type="text" name="customText" title="Change font sample text" id="txtCustomText" placeholder="Custom Text" oninput="updateCustomText(this.value)"></li>
+                        <li>
+                            <!-- onchange vs oninput: onchange fires after losing focus, oninput is immediate-->
+                            <select name="fontSize" id="cmbFontSize" title="Change font size" oninput="updateFontSize(this.value)">
+                                <option value="8px">8px</option>
+                                <option value="12px">12px</option>
+                                <option value="14px">14px</option>
+                                <option value="20px">20px</option>
+                                <option value="24px">24px</option>
+                                <option value="32px">32px</option>
+                                <option value="40px">40px</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label text="Theme" class="theme-switch" title="Change theme"><input type="checkbox" name="theme" id="chkChangeTheme">
+                                <div class="slider round"></div>
+                            </label>
+                        </li>
+                        <li><input type="button" name="layoutMode" id="btnLayoutMode" title="Change view layout" value="LIST" onclick="changeLayoutMode(this)"></li>
+                        <li><input type="button" name="reset" id="btnReset" title="Reset to default" value="Reset" onclick="resetPageUtils()"></li>
+                    </ul>
+                </form>
+            </nav>
+        </header>
+        <main>
+            <!-- display font cards -->
+            <div id="font-card-list">
+                
+            </div>
+        </main>
+        <footer id="site-footer" class="center-content">            
+            <p class="center-child" id="footer-content-container">
+                <div id="dev-info">
+                    <h3>Project Info</h3>
+                    <div>
+                        <p><strong>Project: </strong>Fontio <em>(a font finder)</em></p>
+                        <p><strong>Developed By: </strong>Eric Upton <a href="http://github.com/profile...">(github profile)</a></p>
+                    </div>
+                    <div class="center-child"><img id="footer-logo" src="./images/logo-watermark.png" alt="gray scale logo watermark" /></div>
+                </div>
+                <p id="credits-info">
+                    <h3>Credits</h3>
+                    <div>
+                        <p><strong>Light/Dark Theme: </strong>Inspired by <a href="https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8">Dev.to</a></p>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            
+        </footer>
+    </body>
+</html>

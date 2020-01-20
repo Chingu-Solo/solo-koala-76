@@ -1,0 +1,264 @@
+:root {
+    --primary-link-color: dodgerblue;
+    --secondary-color: rgb(188, 199, 209);
+    --font-color: #424242;
+    --bg-color: #fff;
+    --subtle-color: gainsboro;
+    --heading-color: #292922;
+    --accent-color: goldenrod;
+}
+
+[data-theme="dark"] {
+    --primary-link-color: #9A97F3;
+    --secondary-color: #50545f;
+    --font-color: #e1e1ff;
+    --bg-color: #161625;
+    --subtle-color: #424242;
+    --heading-color: #818cab;
+    --accent-color: darkgoldenrod;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+
+h1, h2, h3, h4, h5 {
+    color: var(--heading-color);
+}
+
+a {
+    color: var(--primary-link-color);
+}
+
+#main-header {
+    margin-bottom: 10px;
+    height: 50px;
+}
+
+#header-nav {
+    display: block;
+    float: right;
+    width: 250px;
+}
+
+#site-nav {
+    float: right;
+}
+
+#site-nav li {
+    display: inline-block;
+}
+
+#site-nav li::before {
+    content: " | ";
+}
+
+#header-logo {
+    width: 250px;
+    float: left;
+    min-height: 50px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#header-logo img {
+    height: 50px;
+    float: left;
+    margin-right: 10px;
+}
+
+#header-utils {
+    display: inline-block;
+    width: 95%;
+    margin-left:25px;
+    margin-right:25px;
+    margin-bottom: 10px;
+    height: 60px;
+    clear: both;
+    border: 1px solid var(--subtle-color);
+    text-align: center;
+    box-shadow: 0 0 5px 0 var(--subtle-color);
+}
+
+#page-utils li {
+    display: inline-block;
+    min-width: 100px;
+    margin: 0 5px 0 5px;
+}
+
+input, select {
+    padding: 5px;
+    border: 1px var(--secondary-color) dashed;
+    border-radius: 3px;
+    outline: none;
+}
+
+input:focus, select:focus {
+    border: 1px var(--accent-color) solid;
+    border-radius: 3px;
+    box-shadow: 0 0 10px 0 var(--accent-color);
+}
+
+select {
+    padding: 4px;
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 22px;
+    position: relative;
+    width: 40px;
+    border: 1px dashed var(--secondary-color);
+    border-radius: 34px;
+}
+
+.theme-switch input {
+    display:none;
+}
+
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+.slider:before {
+    background-color: #fff;
+    bottom: 2px;
+    content: "";
+    height: 18px;
+    left: 2px;
+    position: absolute;
+    transition: .4s;
+    width: 18px;
+}
+
+input[type="button"] {
+    cursor: pointer;
+}
+  
+input:checked + .slider {
+    background-color: #66bb6a;
+}
+  
+input:checked + .slider:before {
+    transform: translateX(18px);
+}
+  
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+main {
+    width: 100%;
+    display: inline-block;
+}
+
+/* #font-card-list {
+    
+} */
+
+#site-footer {
+    clear: both;
+    display: block;
+    background-color: var(--secondary-color);
+    height: 200px;
+}
+
+#footer-content-container {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#dev-info {
+    padding: 15px;
+    float: left;
+}
+
+#credits-info {
+    padding: 15px;
+    float: right;
+}
+
+#footer-logo {
+    padding: 10px;
+}
+
+.center-content {
+    text-align: center;
+}
+
+.center-child {
+    display: block;
+}
+
+.font-card {
+    display: block;
+    width: 20%;
+    min-width: 150px;
+    height: 150px;
+    float: left;
+    padding: 10px;
+    border-top: 1px solid var(--secondary-color);;
+    margin: 15px;
+    overflow: hidden;
+}
+
+.font-card-header {
+    width: 100%;
+    height: 40px;
+}
+
+.font-card-info {
+    float: left;
+    height: 50px;
+    width: 165px;
+}
+
+.font-card-actions {
+    float: right;
+    height: 50px;
+    width: 35px;
+}
+
+.action-button {
+    cursor: pointer;
+}
+
+.font-card-designer {
+    color: var(--secondary-color);
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.font-card-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.font-card-details {
+    width: 100%;
+    clear: both;
+}
+
+.font-sample {
+    font-size: 20px;
+}
+
+#footer-logo {
+    height: 30px;
+    width: 30px;
+}
