@@ -25,6 +25,11 @@ body {
 
 h1, h2, h3, h4, h5 {
     color: var(--heading-color);
+    font-family: "Raleway", sans-serif;
+}
+
+p {
+    font-family: "Raleway", sans-serif;
 }
 
 a {
@@ -82,10 +87,16 @@ a {
     box-shadow: 0 0 5px 0 var(--subtle-color);
 }
 
-#page-utils li {
+#page-utils {
     display: inline-block;
-    min-width: 100px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#page-utils li {
     margin: 0 5px 0 5px;
+    float: left;
+    list-style-type: none;
 }
 
 input, select {
@@ -173,26 +184,33 @@ main {
     display: block;
     background-color: var(--secondary-color);
     height: 200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #footer-content-container {
-    width: 50%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
 
 #dev-info {
     padding: 15px;
-    float: left;
+    margin-left: auto;
+    margin-right:auto;
 }
 
 #credits-info {
     padding: 15px;
-    float: right;
+    margin-left: auto;
+    margin-right:auto;
 }
 
 #footer-logo {
     padding: 10px;
+    height: 30px;
+    width: 30px;
 }
 
 .center-content {
@@ -214,6 +232,7 @@ main {
     margin: 15px;
     overflow: hidden;
 }
+
 
 .font-card-header {
     width: 100%;
@@ -258,7 +277,47 @@ main {
     font-size: 20px;
 }
 
-#footer-logo {
-    height: 30px;
-    width: 30px;
+.font-card-list-layout {
+    width: 95% !important;
+}
+
+@media (max-width: 1040px) {
+    .font-card {
+        width: 42%;        
+        min-width: initial; 
+    }
+}
+
+@media (max-width: 725px) {
+    .font-card {
+        width: 42%;        
+        min-width: initial;
+    }
+
+    #page-utils li {
+        display: inline-block;
+        min-width: none;
+        margin: 0 5px 0 5px;
+    }
+    
+    #txtCustomText {
+        display: none;
+    }
+
+    #btnLayoutMode {
+        display: none;
+    }
+}
+
+@media (max-width: 660px) {
+    .font-card {
+        width: 95%;
+        min-width: initial;
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    #cmbFontSize {
+        display: none;
+    }
 }
