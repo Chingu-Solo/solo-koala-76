@@ -2,7 +2,20 @@ fontList = [
     {fontName:"Roboto", designer:"Christian Robertson", family:"Roboto", rank:1},
     {fontName:"Montserrat", designer:"Julieta Ulanovsky", family:"Montserrat", rank:2},
     {fontName:"Lato", designer:"Łukasz Dziedzic", family:"Lato", rank:3},
-    {fontName:"Raleway", designer:"Multiple Designers", family:"Raleway", rank:4}
+    {fontName:"Raleway", designer:"Multiple Designers", family:"Raleway", rank:4},
+    {fontName:"Gayathri", designer:"SMC", family:"Gayathri", rank:3},
+    {fontName:"Oswald", designer:"Vernon Adams, Kalapi Gajjar, Cyreal", family:"Oswald", rank:3},
+    {fontName:"Poppins", designer:"Indian Type Foundry", family:"Poppins", rank:3},
+    {fontName:"Baskervville", designer:"ANRT", family:"Baskervville", rank:3},
+    {fontName:"Merriweather", designer:"Sorkin Type", family:"Merriweather", rank:3},
+    {fontName:"Muli", designer:"Vernon Adams", family:"Muli", rank:3},
+    {fontName:"Crimson Text", designer:"Sebastian Kosch", family:"Crimson Text", rank:3},
+    {fontName:"Alata", designer:"Spyros Zevelakis, Eben Sorkin", family:"Alata", rank:3},
+    {fontName:"Fjalla One", designer:"Sorkin Type", family:"Fjalla One", rank:3},
+    {fontName:"Source Code Pro", designer:"Paul D. Hunt", family:"Source Code Pro", rank:3},
+    {fontName:"Dancing Script", designer:"Impallari Type", family:"Dancing Script", rank:3},
+    {fontName:"Pacifico", designer:"Vernon Adams, Jacques Le Bailly, Botjo Nikoltchev, Ani Petrova", family:"Pacifico", rank:3},
+    {fontName:"Baloo Bhai", designer:"Ek Type", family:"Baloo Bhai", rank:3}
 ]
 
 var themeToggleSwitch = null;

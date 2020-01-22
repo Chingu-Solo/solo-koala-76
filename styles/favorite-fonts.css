@@ -36,9 +36,17 @@ a {
     color: var(--primary-link-color);
 }
 
+a:hover {
+    font-weight: bolder;
+}
+
 #main-header {
     margin-bottom: 10px;
     height: 50px;
+}
+
+#main-header a {
+    text-decoration: none;
 }
 
 #header-nav {
@@ -75,10 +83,9 @@ a {
 }
 
 #header-utils {
-    display: inline-block;
     width: 95%;
-    margin-left:25px;
-    margin-right:25px;
+    margin-left:auto;
+    margin-right:auto;
     margin-bottom: 10px;
     height: 60px;
     clear: both;
@@ -172,12 +179,14 @@ input:checked + .slider:before {
 
 main {
     width: 100%;
-    display: inline-block;
+    display: block;
 }
 
-/* #font-card-list {
-    
-} */
+#font-card-list {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;    
+}
 
 #site-footer {
     clear: both;
@@ -231,8 +240,14 @@ main {
     border-top: 1px solid var(--secondary-color);;
     margin: 15px;
     overflow: hidden;
+    transition: box-shadow .75s, transform .2s ease-in-out;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
+.font-card:hover  {
+    transform: scale(1.03);
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.3);
+}
 
 .font-card-header {
     width: 100%;
@@ -242,7 +257,7 @@ main {
 .font-card-info {
     float: left;
     height: 50px;
-    width: 165px;
+    width: 80%;
 }
 
 .font-card-actions {
