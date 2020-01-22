@@ -237,8 +237,8 @@ main {
     height: 150px;
     float: left;
     padding: 10px;
-    border-top: 1px solid var(--secondary-color);;
-    margin: 15px;
+    border-top: 1px solid var(--secondary-color);
+    margin: 10px;
     overflow: hidden;
     transition: box-shadow .75s, transform .2s ease-in-out;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
@@ -292,7 +292,7 @@ main {
     font-size: 20px;
 }
 
-.font-card-list-layout {
+.list-layout {
     width: 95% !important;
 }
 

@@ -179,10 +179,10 @@ function changeLayoutMode(editor) {
     for (var i=0; i < fontCardList.length; i++) {
         //fontCardList[i].style.width = (currentLayout == "grid") ? "20%" : "95%";
         if ((currentLayout == "grid")) {
-            fontCardList[i].className = fontCardList[i].className.replace(" font-card-list-layout","");
+            fontCardList[i].className = fontCardList[i].className.replace(" list-layout","");
         }
         else {
-            fontCardList[i].className += " font-card-list-layout";
+            fontCardList[i].className += " list-layout";
         }
     }
 }
