@@ -36,6 +36,11 @@ a {
     color: var(--primary-link-color);
 }
 
+a.active {
+    text-decoration-color: var(--accent-color) !important;
+    text-decoration: underline !important;
+}
+
 a:hover {
     font-weight: bolder;
 }
