@@ -3,6 +3,14 @@
 ## What is Fontio?
 Fontio is a simple web project designed to behave like the google fonts website. 
 
+## Functionality
+ * Display cards with fonts from google fonts
+ * Search Fonts
+ * Enter and preview custom text in each font
+ * Dark/Light Mode Toggle
+ * Grid/List Layout Toggle
+ * Reset
+ 
 ## Purpose
 The purpose is to create a expiremental project to improve my frontend dev skills. My primary focus for this project isn't to perfect layout (HTML, CSS), but instead focus on coding.
 
