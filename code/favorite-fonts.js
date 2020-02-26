@@ -77,8 +77,11 @@ function resetPageUtils() {
     document.getElementById("txtCustomText").value = "";
     document.getElementById("txtSearch").value = "";
     document.getElementById("cmbFontSize").value = "20px";
+    // var layoutModeButton = document.getElementById("btnLayoutMode");
+    // updateLayoutButtonText(layoutModeButton);
     clearResultsView();
     loadFontCards();
+    updateFontCardsLayout();
 }
 
 function clearResultsView(element) {
@@ -173,8 +176,12 @@ function switchTheme(e) {
 var currentLayout = "grid"; // or list
 
 function changeLayoutMode(editor) {
-    currentLayout = (currentLayout == "grid") ? "list" : "grid";
-    editor.value = ((currentLayout == "grid") ? "list" : "grid").toUpperCase();
+    updateLayoutModeFlag();
+    updateLayoutButtonText(editor);
+    updateFontCardsLayout();
+}
+
+function updateFontCardsLayout() {
     var fontCardList = document.getElementsByClassName("font-card");
     for (var i=0; i < fontCardList.length; i++) {
         //fontCardList[i].style.width = (currentLayout == "grid") ? "20%" : "95%";
@@ -187,7 +194,14 @@ function changeLayoutMode(editor) {
     }
 }
 
+function updateLayoutModeFlag() {
+    currentLayout = (currentLayout == "grid") ? "list" : "grid";
+}
 
+function updateLayoutButtonText(editor) {
+    var editorText = ((currentLayout == "grid") ? "list" : "grid").toUpperCase();
+    editor.value = editorText;
+}
 // font-family: 'Roboto', sans-serif;
 // font-family: 'Montserrat', sans-serif;
 // font-family: 'Lato', sans-serif;
