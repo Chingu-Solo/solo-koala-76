@@ -20,4 +20,4 @@ The next iteration will include:
   * Use of the google fonts api
 
 ## Credit
-This project was started as part of a [link](http://chingu.io "Chingu.io") solo project.
+This project was started as part of a [Chingu.io](http://chingu.io "Chingu.io") solo project.
